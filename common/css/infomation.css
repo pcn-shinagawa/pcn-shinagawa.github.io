@@ -1,0 +1,79 @@
+/*------------------------------*/
+.infomationPanel{
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-top: 10px;
+  background: #fffbde;
+}
+
+section h2{
+  color: #fff;
+  font-size: 1.84em;
+  text-align: left;
+  position: relative;
+  background: rgba(255, 154, 8, 1);
+}
+section h2 span.sub1{
+  padding: 0 0 0 .5em;
+  background: #418dff;
+  z-index: -1;
+  font-size: 1.222em;
+}
+section h2 span.sub2{
+  font-size: .688em;
+  padding-left: 1em;
+  z-index: 1;
+}
+section h2::after{
+  content: '';
+  width: 5%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #418dff;
+}
+@media (max-width: 40em) {
+  section h2::after{
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;   
+  }
+  section h2 span.sub2{
+    font-size: .468em;
+  }
+}
+
+#infoList li {
+  height: auto;
+  min-height: 100px;
+}
+
+ul.boxglid {
+  width: 100%;
+  position: relative;
+  margin: 0 auto 2em;
+  padding: 1.5em 1em;
+  background: #fff;
+  border-bottom: 2px solid #16a7e3;
+}
+
+ul.boxglid li {
+  display: inline-block;
+  vertical-align: top;
+  width: 46.66666%;
+  margin: 0 1% 1% 0;
+  height: auto;
+  overflow: hidden;
+}
+
+ul.boxglid li .infoArticle {
+  vertical-align: top;
+  width: auto;
+  max-height: 100px;
+  margin: 0 1% 1% 0;
+  height: auto;
+  overflow: hidden;
+}

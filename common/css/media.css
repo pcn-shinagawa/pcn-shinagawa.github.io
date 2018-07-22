@@ -1,0 +1,32 @@
+.headerPict {
+    position: relative;
+    width: 100%;
+    /*margin: 5px;*/
+}
+
+.topPict {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /*margin: 5px;*/
+}
+
+#candiv {
+    position: absolute;
+    margin: 42px 50px;
+    width: 91%;
+    height: 77%;
+    z-index: 2;
+}
+#clean {
+    position: static;
+    width:20%;
+    height:13%;
+    border: none;
+    font-size: 4em;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 3
+}
+
