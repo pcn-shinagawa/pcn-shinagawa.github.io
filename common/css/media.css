@@ -12,6 +12,12 @@
     /*margin: 5px;*/
 }
 
+@media only screen and (max-width: 800px) {
+    .topPict {
+      height: auto;
+    }
+  }
+
 #candiv {
     position: absolute;
     margin: 42px 50px;
