@@ -4,6 +4,7 @@
     /*margin: 5px;*/
 }
 
+/* 黒板 */
 .topPict {
     position: absolute;
     width: 100%;
@@ -12,23 +13,15 @@
     /*margin: 5px;*/
 }
 
-@media only screen and (max-width: 800px) {
-    .topPict {
-      height: auto;
-    }
-  }
-
 #candiv {
     position: absolute;
-    margin: 42px 50px;
+    margin: 0px 4.5%;
     width: 91%;
-    height: 77%;
+    height: 85%;
     z-index: 2;
 }
 #clean {
     position: static;
-    width:20%;
-    height:13%;
     border: none;
     font-size: 4em;
     color: #FFFFFF;
@@ -36,3 +29,32 @@
     z-index: 3
 }
 
+#can {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .topPict {
+        height: auto;
+    }
+
+    #candiv {
+        position: absolute;
+        margin: 0px 4.5%;
+        width: 91%;
+        height: 90%;
+        z-index: 2;
+    }
+
+    #clean {
+        font-size: 1.5em;
+        z-index: 3
+    }
+
+    #can {
+        width: 100%;
+        height: 87%;
+    }
+    
+  }

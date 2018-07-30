@@ -1,4 +1,4 @@
-/*------------------------------*/
+/*----------- お知らせ・イベント -------------*/
 .infomationPanel{
   width: 80%;
   height: auto;
@@ -14,12 +14,14 @@ section h2{
   position: relative;
   background: rgba(255, 154, 8, 1);
 }
+
 section h2 span.sub1{
   padding: 0 0 0 .5em;
   background: #418dff;
   z-index: -1;
   font-size: 1.222em;
 }
+
 section h2 span.sub2{
   font-size: .688em;
   padding-left: 1em;
@@ -34,17 +36,38 @@ section h2::after{
   top: 0;
   background: #418dff;
 }
-@media (max-width: 40em) {
+
+@media only screen and (max-width: 640px) {
+  section h2{
+    color: #fff;
+    font-size: 1.84em;
+    text-align: left;
+    position: relative;
+    background: rgba(255, 154, 8, 1);
+  }
+  
+  section h2 span.sub1{
+    padding: 0 0 0 .5em;
+    background: #418dff;
+    z-index: 0;
+    font-size: 1.222em;
+  }
+  
+  section h2 span.sub2{
+    font-size: .468em;
+    padding-left: 1em;
+    z-index: 2;
+  }
   section h2::after{
     top: 0;
     right: 0;
     left: 0;
     width: 100%;   
-  }
-  section h2 span.sub2{
-    font-size: .468em;
+    background: #418dff;
+    z-index: -1;
   }
 }
+
 
 #infoList li {
   height: auto;
@@ -76,4 +99,20 @@ ul.boxglid li .infoArticle {
   margin: 0 1% 1% 0;
   height: auto;
   overflow: hidden;
+}
+
+/* トップページ イベントリスト */
+@media only screen and (max-width: 640px) {
+  
+  ul.boxglid li {
+    display: block;
+    width: 100%;
+    margin: 0 1% 1% 0;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  ul.boxglid li .infoArticle {
+    width: 90%;
+  }
 }
