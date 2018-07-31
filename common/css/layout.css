@@ -270,7 +270,7 @@
 }
 @media only screen and (max-width: 640px) {
   .header-navItem {
-    font-size: 13px;
+    font-size: 12px;
     height: 62px;
   }
   .header-navItem::before {
