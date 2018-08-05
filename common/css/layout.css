@@ -4628,6 +4628,8 @@ td .sites-tableInner {
   height: 600px;
   overflow: hidden;
   z-index: 0;
+  width: 95%;
+  margin: auto;
 }
 
 .topMedia > img,

@@ -1,13 +1,20 @@
-/*----------- お知らせ・イベント -------------*/
+/*---------- main -------------*/
+.main{
+  min-height: 91vh;
+}
+
+
+/*-----------トップページ お知らせ・イベント -------------*/
 .infomationPanel{
   width: 80%;
   height: auto;
   margin-left: 10%;
   margin-top: 10px;
   background: #fffbde;
+  border: 1px solid  rgba(255, 154, 8, 1);
 }
 
-section h2{
+.infomationPanel h2{
   color: #fff;
   font-size: 1.84em;
   text-align: left;
@@ -15,19 +22,19 @@ section h2{
   background: rgba(255, 154, 8, 1);
 }
 
-section h2 span.sub1{
+.infomationPanel  h2 span.sub1{
   padding: 0 0 0 .5em;
   background: #418dff;
   z-index: -1;
   font-size: 1.222em;
 }
 
-section h2 span.sub2{
+.infomationPanel h2 span.sub2{
   font-size: .688em;
   padding-left: 1em;
   z-index: 1;
 }
-section h2::after{
+.infomationPanel h2::after{
   content: '';
   width: 5%;
   height: 100%;
@@ -74,8 +81,8 @@ section h2::after{
   min-height: 100px;
 }
 
-ul.boxglid {
-  width: 100%;
+.infomationPanel ul.boxglid {
+  width: 98%;
   position: relative;
   margin: 0 auto 2em;
   padding: 1.5em 1em;
@@ -83,16 +90,16 @@ ul.boxglid {
   border-bottom: 2px solid #16a7e3;
 }
 
-ul.boxglid li {
+.infomationPanel ul.boxglid li {
   display: inline-block;
   vertical-align: top;
-  width: 46.66666%;
+  width: 48%;
   margin: 0 1% 1% 0;
   height: auto;
   overflow: hidden;
 }
 
-ul.boxglid li .infoArticle {
+.infomationPanel ul.boxglid li .infoArticle {
   vertical-align: top;
   width: auto;
   max-height: 100px;
@@ -104,7 +111,7 @@ ul.boxglid li .infoArticle {
 /* トップページ イベントリスト */
 @media only screen and (max-width: 640px) {
   
-  ul.boxglid li {
+  .infomationPanel ul.boxglid li {
     display: block;
     width: 100%;
     margin: 0 1% 1% 0;
@@ -112,7 +119,81 @@ ul.boxglid li .infoArticle {
     overflow: hidden;
   }
   
-  ul.boxglid li .infoArticle {
+  .infomationPanel ul.boxglid li .infoArticle {
     width: 90%;
   }
+}
+
+/*-----------詳細ページ -------------*/
+.detailPanel{
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /*background: #fffbde;*/
+  border: 1px solid  rgba(255, 154, 8, 1);
+}
+
+.detailPanel h2{
+  color: #fff;
+  font-size: 1.84em;
+  text-align: left;
+  position: relative;
+  background: rgba(255, 154, 8, 1);
+}
+
+.detailPanel  h2 span.sub1{
+  padding: 0 0 0 .5em;
+  background: #418dff;
+  z-index: -1;
+  font-size: 1.222em;
+}
+
+.detailPanel h2 span.sub2{
+  font-size: .688em;
+  padding-left: 1em;
+  z-index: 1;
+}
+
+.detailPanel h2::after{
+  content: '';
+  width: 5%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #418dff;
+}
+
+.detailPanel p{
+  margin: 10px;
+}
+
+/*-----------詳細ページ イベント詳細-------------*/
+ul.event.single {
+  max-width: 700px;
+  margin: 1em auto .8em;
+  padding: 1em;
+  border: 5px solid #b0effa;
+}
+
+ul.event li {
+  display: table;
+  padding: .75em 0;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+
+ul.event li div:first-child {
+  width: 100px;
+}
+
+ul.event li div:last-child {
+  width: 550px;
+  text-align: left;
+}
+
+ul.event li div {
+  display: table-cell;
 }
