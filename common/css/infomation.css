@@ -14,6 +14,15 @@
   }  
 }
 
+/*----------- Header Logo ---------------------------- */
+.slogan {
+  float: right;
+  margin-right: 3%;
+  font-size: 0.8em;
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+}
+
 /*-----------トップページ お知らせ・イベント -------------*/
 .infomationPanel{
   width: 60%;
@@ -108,15 +117,21 @@
   margin: 0 1% 1% 0;
   height: auto;
   overflow: hidden;
+  line-height: 15px;
 }
 
 .infomationPanel ul.boxglid li .infoArticle {
   vertical-align: top;
   width: auto;
-  max-height: 100px;
+  max-height: 70px;
   margin: 0 1% 1% 0;
   height: auto;
   overflow: hidden;
+}
+
+.date {
+  text-align: right;
+  font-size: 0.7em;
 }
 
 /* トップページ イベントリスト */
