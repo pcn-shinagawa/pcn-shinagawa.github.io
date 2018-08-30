@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -33,15 +33,10 @@
 
 </head>
 <body id="pagetop"  onload="mam_draw_init();">
-
+<!--
+  <!-- JavaScriptSDK for FacebookPlugin --
   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.1';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+  <script src="/common/js/fbPlugin.js"></script>
 
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5BJZ8B"
@@ -49,17 +44,16 @@
   <!-- End Google Tag Manager (noscript) -->
 
 <frameset>
-  <frame>
+<frame>
   <header class="header" id="header">
-  <h1 class="header-id" style="display: grid">
-    <div class="header-idInner">
-      <a href="/">
-        <img src="/common/img/layout/logo.gif" alt="PCN品川 ～Enjoy programming for the future～">
-      </a>
-      <font class="slogan">Enjoy programing for the future </font>
-    </div>
-  </h1>
-  
+    <h1 class="header-id" style="display: grid">
+      <div class="header-idInner">
+        <a href="/">
+          <img src="/common/img/layout/logo.gif" alt="PCN品川 ～Enjoy programming for the future～">
+        </a>
+        <font class="slogan">Enjoy programing for the future </font>
+      </div>
+    </h1>
   <nav class="header-nav">
     <ul>
       <li><a href="/" class="header-navItem kodomofont">ホーム</a></li>
@@ -91,8 +85,10 @@
           <h2 class="header-detailItem-title js-detailTitle"><a href="/contents//workshop/eventlist/" class="kodomofont">ワークショップ</a></h2>
           <div class="header-detailItemInside">
             <ul class="header-detailItem-list">
+              <!-- <li><a href="/contents//workshop/news/" class="kodomofont">お知らせ</a></li> -->
               <li><a href="/contents//workshop/eventlist/" class="kodomofont">イベントリスト</a></li>
               <li><a href="/contents//workshop/flow/" class="kodomofont">イベントの流れ</a></li>
+              <!-- <li><a href="/contents//workshop/attention/" class="kodomofont">さんかのルール</a></li> -->
             <!-- /.header-detailItem-list -->
             </ul>
           <!-- /.header-detailItemInside -->
@@ -139,74 +135,72 @@
   <div class="container" id="container" >
     <div class="overlay" id="overlay"></div>
     <main role="main" class="main">
-      <div>
-        <img src="/common/img/pict/bana3.png" class="headerPict">
-      </div>
-      <div class="topMedia">
-        <img src="/common/img/main.jpg" class="topPict">
-        <div>
-          <div style="border:none;" id="candiv">
-              <input id="clean" type="button" onClick="clearCan();" value="絵を消す"　 class="kodomofont clean" data-inline="true" />
-              <!-- <text class="kodomofont" style="position: absolute;margin-top: 10%;font-size: 8em;color: #FFFFFF;z-index: 0;">　PCN　品川　</text> -->
-              <canvas id="can"></canvas>
-          </div>
-        </div>
-      <!-- /.mainVisual -->
-      </div>
-      <div class="topics">
-      <section class="infomationPanel">
-          <h2 class="kodomofont"><span class="sub1">I</span>NFORMATION<span class="sub2">お知らせ</span></h2>
-          <ul id="infolist" class="boxglid">
-            <li>
-                <p class="date">2018.08.09</p>
-                <a href="/contents/workshop/eventlist/20180924.html" target="_top">
-                  <font style="font-size: 9pt"><b>9/24(土)開催！</b>＜小中学生向け＞<br>「IchigoJam」でプログラミングに挑戦！</font>
-                  <img src="/common/img/event/ev01.jpg" class="infoArticle">
-                </a>
-            </li>
-            <li>
-              <p class="date">2018.08.31</p>
-              <a href="/contents/workshop/eventlist/20180916.html" target="_top">
-                <font style="font-size: 9pt"> 9/16(日)開催!＜社会人向け＞<br>こどもでもわかる、大人向けプログラミング</font>
-                <img src="/common/img/event/Otona.jpg" class="infoArticle">
-              </a>
-            </li>
-            <li>
-              <p class="date">2018.08.13</p>
-              <a href="/contents/workshop/eventlist/planing.html" target="_top">
-                <font style="font-size: 9pt"> 10月開催（開催日未定）＜小中学生向け＞<br>「IchigoJam」でプログラミングに挑戦！</font>
-                <img src="/common/img/event/ev02.jpg" class="infoArticle">
-              </a>
-            </li>
-            <li>
-              <p class="date">2018.08.13</p>
-              <a href="/contents/workshop/eventlist/planing.html" target="_top">
-                <font style="font-size: 9pt"> 11月開催（開催日未定）＜小中学生向け＞<br>「IchigoJam」でプログラミングに挑戦！</font>
-                <img src="/common/img/event/ev02.jpg" class="infoArticle">
-              </a>
-            </li>
-            <li>
-                <p class="date">2018.08.13</p>
-                <a href="http://pcn.club/contest/">
-                  <font style="font-size: 9pt"> PCNこどもプログラミングコンテスト2018開催決定！</font>
-                  <img src="/common/img/event/mainvisual.png" class="infoArticle">
-                </a>
-            </li>
-          </ul>
+
+
+      <section class="detailPanel">
+          <h2 class="kodomofont"><span class="sub1">E</span>vent detail<span class="sub2">イベントしょうさい</span></h2>
+          <div>
+              <div class="titleInner">   
+                <!--<span class="deadInfo">※当イベントは終了いたしました。</span></p>-->
+              </div>
+    
+              <ul class="event single">
+                <li class="clerfix">
+                  <div>日 時</div>
+                  <div>2018年9/16(日) 20:00～22:00<br>
+                    <p>
+                    こどもでもわかる大人向けプログラミング教室<br>
+                  </div>
+                </li>
+                <li class="clerfix">
+                  <div>会　場</div>
+                  <div>会場：スタンダード会議室　反田ソニー通り店3階Ａ会議室<br>
+                    アクセス：五反田駅から徒歩5分
+                  </div>
+                </li>
+                <li class="clerfix">
+                  <div>対　象</div>
+                  <div>社会人の方</div>
+                </li>
+    
+                <li class="clerfix">
+                  <div>参加費</div>
+                  <div>
+                    <p>
+                    　1人2000円
+                    </p>
+                  </div>
+                </li>
+                <li class="clerfix">
+                  <div>定　員</div>
+                  <div>20名（※先着順での受付となります。） </div>
+                </li>
+                <li class="clerfix">
+                  <div>持ち物</div>
+                  <div>筆記用具
+                  </div>
+                </li>
+                <li class="clerfix">
+                  <div>備　考</div>
+                  <div>
+                  【ご参加希望の方へ撮影ご協力のお願い】<br>
+                  　※当日の模様を撮影し、ウェブページ等に掲載させて頂く場合があります。<br>
+                  　もし、差支えがある場合は、当日参加時にその旨お知らせ願います。<br>
+                  　会場に取材が入り、ワークショップ開催の様子が報道されることがあります。<br>
+                  　取材および掲載に関して問題がある場合は、事前にお知らせ願います。 
+                  </div>
+                </li>			
+                <li class="clerfix">
+                  <div>応募方法</div>
+                  <div>》<a href="https://pcn-shinagawa-20180916.peatix.com/view" target="_blank">お申込みフォーム</a>より必要事項をご入力の上、送信してください。
+                  </div>
+                   <!--※当イベントは終了いたしました。-->
+                </li>
+              </ul>
+                  <!--<p><span class="deadInfo">※当イベントは終了いたしました</span></p>-->
+              </div>
+    
       </section>
-      <section class="snsPanel">
-        <h2 class="kodomofont"><span class="sub1">S</span>NS<span class="sub2"></span></h2>
-        <div style="display: inline-flex">
-          <div style="display: grid">
-            <a href="https://line.me/R/ti/p/%40fjh0356n"><img src="/common/img/layout/LINEat_typeA.png" class="snsLineat"></a>
-            　開催イベント情報が告知されます。
-          </div>
-          <img src="/common/img/layout/LINEat.jpg" class="snsLineatQR">
-        </div>
-        <div><img src="/common/img/layout/FindUsOn-FB.png" class="snsFacebookBr"></div>
-        <div class="fb-page" style="margin:10px;" data-href="https://www.facebook.com/pcn.shinagawa.ota/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/pcn.shinagawa.ota/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pcn.shinagawa.ota/">PCN品川</a></blockquote></div>
-    </section>
-    </div>
     <!-- /main -->
     </main>
 
