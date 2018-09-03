@@ -375,7 +375,7 @@
   overflow: hidden;
 }
 
-/* トップページ イベントリスト */
+/* 詳細ページ イベントリスト */
 @media only screen and (max-width: 640px) {
   
   .detailPanel ul.boxglid li {
@@ -389,6 +389,7 @@
   .detailPanel ul.boxglid li .infoArticle {
     width: 90%;
   }
+}
 
 /*-----------詳細ページ イベント詳細-------------*/
 ul.event.single {
