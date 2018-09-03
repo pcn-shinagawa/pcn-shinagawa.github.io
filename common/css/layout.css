@@ -4674,6 +4674,17 @@ td .sites-tableInner {
     background-size: cover;
   }
 }
+/* topGreeeting */
+.topGreeeting {
+  font-size:1.4em; 
+  padding-left: 3%;
+}
+
+@media only screen and (max-width: 800px) {
+  .topGreeeting {
+    font-size:0.9em; 
+  }
+}
 
 /* Topics panel
    ========================================================================== */
