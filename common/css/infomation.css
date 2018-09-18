@@ -24,6 +24,11 @@
 }
 
 /*-----------トップページ お知らせ・イベント -------------*/
+.deadInfo {
+  font-size: 1.7em;
+  color: red;
+}
+
 .infomationPanel{
   width: 60%;
   height: auto;
