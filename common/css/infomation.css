@@ -424,3 +424,19 @@ ul.event li div:last-child {
 ul.event li div {
   display: table-cell;
 }
+
+
+/* イベントの流れページ */
+.levelTable th{
+  padding: 3px 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+}
+
+.levelTable td{
+  padding: 3px 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+}
