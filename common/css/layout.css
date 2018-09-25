@@ -4643,7 +4643,7 @@ td .sites-tableInner {
 
 @media only screen and (max-width: 800px) {
   .topMedia {
-    height: 250px;
+    height: 200px;
     width: auto;
   }
   .topMedia > video {
