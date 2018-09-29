@@ -36,7 +36,7 @@
 
 @media only screen and (max-width: 800px) {
     .topPict {
-        height: auto;
+        height: 200px;
     }
 
     #candiv {
