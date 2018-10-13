@@ -4,9 +4,20 @@
 <!--  created with free sitemap generation system www.sitemapxml.jp  --> 
 <url>
   <loc>https://shinagawa.pcn.club/</loc>
-  <priority>1.0</priority>
-  <lastmod>2018-09-29T18:32:10+09:00</lastmod>
-  <changefreq>weekly</changefreq>
 </url>
-
+<url>
+  <loc>https://shinagawa.pcn.club/workshop</loc>
+</url>
+<url>
+  <loc>https://shinagawa.pcn.club/workshop/eventlist/</loc>
+</url>
+<url>
+  <loc>https://shinagawa.pcn.club/workshop/flow/</loc>
+</url>
+<url>
+  <loc>https://shinagawa.pcn.club/about</loc>
+</url>
+<url>
+  <loc>https://shinagawa.pcn.club/contact</loc>
+</url>
 </urlset>
