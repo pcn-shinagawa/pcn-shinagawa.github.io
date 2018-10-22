@@ -440,3 +440,13 @@ ul.event li div {
   border-width: 1px;
   border-color: #ccc;
 }
+
+@media only screen and (max-width: 640px) {
+  .levelTable th.levelname{
+    display: none;
+  }
+
+  .levelTable td.levelname{
+    display: none;
+  }
+}
