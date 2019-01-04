@@ -160,6 +160,14 @@
   .infomationPanel ul.boxglid li .infoArticle {
     width: 90%;
   }
+
+  .infomationPanel ul.boxglid .infoView {
+    display: block;
+  }
+
+  .infomationPanel ul.boxglid .infoNoView {
+    display: none;
+  }
 }
 
 /*-----------トップページ SNS -------------*/
