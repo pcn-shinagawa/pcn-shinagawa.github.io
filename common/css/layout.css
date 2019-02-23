@@ -135,7 +135,7 @@
   }
   .header-nav > ul > li {
     display: table-cell;
-    width: 25%;
+    width: 20%;
     height: 90px;
     border-left: 1px solid #e4e7eb;
   }
