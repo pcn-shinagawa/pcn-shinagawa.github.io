@@ -24,7 +24,11 @@ var h;
     ct.lineJoin="round";
     ct.lineCap="round";
     ct.globalAlpha="1";
-  
+    
+    // w1 = $('#pcnlogo').width();
+    // h1 = $('#pcnlogo').height();
+    // $('#pcnlogo').attr('width', w);
+    // $('#pcnlogo').attr('height', h);
     // clearCan();
   }
   function onDown(event){
@@ -83,4 +87,5 @@ var h;
     ct.lineJoin="round";
     ct.lineCap="round";
     ct.globalAlpha="1";
+    $('#pcnlogo').attr('style', 'display: none');
   }
