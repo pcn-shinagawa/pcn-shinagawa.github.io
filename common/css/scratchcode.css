@@ -2,6 +2,10 @@
     width: 500px;
 }
 
-.codelist th tr td{
+.codelist th{
+    border: solid 1px;   /* 枠線指定 */
+}
+
+.codelist td{
     border: solid 1px;   /* 枠線指定 */
 }
