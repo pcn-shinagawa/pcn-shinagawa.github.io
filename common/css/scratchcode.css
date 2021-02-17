@@ -1,0 +1,7 @@
+.codebox{
+    width: 500px;
+}
+
+.codelist th tr td{
+    border: solid 1px;   /* 枠線指定 */
+}
