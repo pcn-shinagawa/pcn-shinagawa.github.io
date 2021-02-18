@@ -1,9 +1,10 @@
 .codebox{
-    width: 800px;
+    width: auto;
 }
 
 .codelist th{
     border: solid 1px;   /* 枠線指定 */
+    white-space:nowrap
 }
 
 .codelist td{
