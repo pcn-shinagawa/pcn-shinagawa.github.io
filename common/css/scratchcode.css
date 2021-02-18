@@ -1,10 +1,20 @@
 .codebox{
-    width: auto;
+    width: 650px;
 }
 
 .codelist th{
     border: solid 1px;   /* 枠線指定 */
-    white-space:nowrap
+    white-space:nowrap;
+    text-align: center;
+}
+
+.codelist .type{
+    width: 50px;
+    text-align: center;
+}
+
+.codelist .codeblock{
+    width: 310px;
 }
 
 .codelist td{
