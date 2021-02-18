@@ -2,11 +2,16 @@
     width: 650px;
 }
 
+.under {
+    text-decoration: underline;
+  }
+
 .codelist th{
     border: solid 1px;   /* 枠線指定 */
     white-space:nowrap;
     text-align: center;
     background-color: cornflowerblue;
+    color: white;
 }
 
 .codelist .type{
